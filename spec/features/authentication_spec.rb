@@ -1,12 +1,13 @@
 feature 'Authentication:' do
   context 'login' do
     before do
-      visit '/'
-      expect(page).to have_current_path '/auth/sign-in'
+      visit '/#/session/sign-in'
+      expect(page).to have_current_path '/#/session/sign-in'
     end
 
     scenario 'when invalid' do
       user = attributes_for :user
+      require 'pry'; ::Kernel.binding.pry;
       within('form') do
         fill_in 'email', with:    user[:email]
         fill_in 'password', with: user[:password]
