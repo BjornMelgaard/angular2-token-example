@@ -17,6 +17,9 @@ export class SignInOAuthComponent {
 
         this.output = null;
 
-        this._tokenService.signInOAuth('github');
+        this._tokenService.signInOAuth('github').subscribe(
+            res =>      console.log(res),
+            error =>    console.log(error)
+        );
     }
 }

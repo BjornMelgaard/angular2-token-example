@@ -1,6 +1,6 @@
 import { RouterModule, Routes } from '@angular/router';
 
-import { 
+import {
     ExampleComponent,
     RestrictedComponent
 } from './';

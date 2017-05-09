@@ -27,6 +27,24 @@ group :development, :test do
   gem 'sqlite3'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
+  gem 'dotenv'
+
+  # RSpec
+  gem 'rspec-rails', '~> 3.5'
+  gem 'factory_girl_rails'
+  gem 'faker'
+  gem 'database_cleaner'
+  gem 'fuubar', require: false
+
+  # Integration testing
+  gem 'poltergeist'
+  gem 'selenium-webdriver'
+  gem 'chromedriver-helper'
+  gem 'capybara-screenshot'
+
+  # Email testing
+  gem 'letter_opener'
+  gem 'capybara-email'
 end
 
 group :development do
