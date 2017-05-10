@@ -52,5 +52,10 @@ You can find a running example [here](https://angular2-token.herokuapp.com/).
 
 2. Open [http://localhost:3000](http://localhost:3000) in your browser
 
+## Github omniauth
+Settings must be like:
+- Homepage URL - `http://localhost:3000`
+- Authorization callback URL - `http://localhost:3000/omniauth/github/callback`
+
 ## License
 The MIT License (see the [LICENSE](https://github.com/neroniaky/angular2-token-example/blob/master/LICENSE) file for the full text)
